@@ -109,14 +109,14 @@
 
 .alttegel{
 
-	background-image: url(alttegel_small.jpg);
+	background-image: url(images/areas/alttegel_small.jpg);
 
 	@include breakpoint(medium) {
-			background-image: url(alttegel_medium.jpg);
+			background-image: url(images/areas/alttegel_medium.jpg);
 	}
 
 	@include breakpoint(large) {
-			background-image: url(alttegel.jpg);
+			background-image: url(images/areas/alttegel.jpg);
 	}
 
 }

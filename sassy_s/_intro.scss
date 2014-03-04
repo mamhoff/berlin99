@@ -1,20 +1,19 @@
 .intro{ 
 	height: em(200);
-	background-image: url(home2_small.jpg);
+	background-image: url(images/home2_small.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top;
 
 	@include breakpoint(medium) {
-			background-image: url(home2_medium.jpg);
+			background-image: url(images/home2_medium.jpg);
 			height: em(320);
 	}
 
 	@include breakpoint(large) {
-			background-size: contain;
 			height: em(400);
 			background-attachment: fixed;
-			background-image: url(home2.jpg);
+			background-image: url(images/home2.jpg);
 			
 	}
 
@@ -22,8 +21,13 @@
 
 .icons{
 	text-align: right;
-	position: absolute;
 	right: 0px;
+	position: absolute;
+
+	a{
+		padding: 0;
+		margin: 0;
+	}
 
 	ul{
 		padding: 0;
@@ -35,30 +39,28 @@
 		list-style: none;
 		margin-top: em(8);
 		margin-left: em(8);
+		width: em(35);
+		height: em(35);
 	}
 
-	.gb{
-		background: url('imgs/icons.png') no-repeat -5px -6px;
-		width: 35px;
-		height: 35px;
+	.en{
+		background: url('images/icons.png') no-repeat -5px -6px;
+		
 	}
 
 	.de{
-		background: url('imgs/icons.png') no-repeat -51px -6px;
-		width: 35px;
-		height: 35px;
+		background: url('images/icons.png') no-repeat -51px -6px;
+		
 	}
 
 	.fb{
-		background: url('imgs/icons.png') no-repeat -5px -47px;
-		width: 35px;
-		height: 35px;
+		background: url('images/icons.png') no-repeat -5px -47px;
+		
 	}
 
 	.tw{
-		background: url('imgs/icons.png') no-repeat -51px -47px;
-		width: 35px;
-		height: 35px;
+		background: url('images/icons.png') no-repeat -51px -47px;
+		
 	}
 }
 

@@ -8,15 +8,6 @@
 
 <div class="icons">
 	<ul>
-			<?php foreach(qtrans_getSortedLanguages() as $language) {
-				$classes = array('lang-'.$language);
-				if($language == $q_config['language'])
-					$classes[] = 'active';
-				echo '<a href="'.qtrans_convertURL($url, $language).'" class="'. implode(' ', $classes) .'"><li ';
-				// set hreflang
-				echo ' hreflang="'.$language.'" title="'.$q_config['language_name'][$language].'"';
-				echo '>'.$q_config['language_name'][$language].'</li></a>';
-			} ?>
 	     <a href="/"><li class="fb" ></li></a>
 	     <a href="/"><li class="tw" ></li></a>
 	</ul>

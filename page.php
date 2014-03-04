@@ -23,19 +23,27 @@ get_header(); ?>
 
 </section>
 
+<section class="about" id="section1">
+	
+	<div class="inner">
 
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
 
 			<?php endwhile; // end of the loop. ?>
+		
+	</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</section>
 
-<?php get_sidebar(); ?>
+<section class="thumbs" id="section2">
+  	<div class="inner">
+
+		<?php get_sidebar('sidebar-apartments'); ?>
+
+	</div>
+</section>
+
+
 <?php get_footer(); ?>
