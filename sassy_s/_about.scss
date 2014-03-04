@@ -1,0 +1,80 @@
+section {
+	position: relative;
+	background:#fdfdfd url(pattern.png) repeat top left;
+	color: $black;
+
+}
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+.about {
+	
+	text-shadow: 1px 1px #fff;
+
+	h2{
+		font-weight: 700;
+	}
+
+	@include breakpoint(large) {
+		padding: em(40) 0 em(80);
+	}
+	
+
+	.col-1-2{
+		padding: em(40) 0;
+
+
+		@include breakpoint(large) {
+			padding: 0;
+
+			&:first-of-type{
+				padding-right: em(50);
+				padding-left: em(0);
+			}
+			&:last-of-type{
+				padding-right: em(0);
+				padding-left: em(50);
+				border-left: solid $black em(1);
+			}
+		}	
+	}
+	
+}
+
+.about::before,
+.about::after {
+	top: -40px;
+	left: 0;
+	z-index: 10;
+	width: 50%;
+	height: 40px;
+	background: inherit;
+
+	@include breakpoint(medium) {
+		top: -50px;
+		height: 50px;
+	}
+}
+
+.about::before {
+	border-radius: 0 40px 0 0;
+
+	@include breakpoint(medium) {
+		border-radius: 0 50px 0 0;
+	}
+}
+
+.about::after {
+	left: 50%;
+	border-radius: 40px 0 0 0;
+
+	@include breakpoint(medium) {
+		border-radius: 50px 0 0 0;
+	}
+}

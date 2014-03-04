@@ -1,0 +1,17 @@
+header{	
+	width: 100%;
+	border-top: solid $red em(7);
+	border-bottom: solid $black em(3);
+
+	a{
+		font-size: em(14);
+
+		@include breakpoint(large) {
+			font-size: em(12);
+		}
+	}
+
+	.logo{
+		padding: em(12) 0 em(10) 0;
+	}
+}

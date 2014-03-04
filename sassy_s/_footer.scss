@@ -1,0 +1,19 @@
+footer{
+	color: #fff;
+	font-family: $header-font;
+	font-weight: 300;
+	font-size: em(12);
+	padding: em(15) 0;
+	text-align: center;
+	background: $black;
+
+	a{
+		color: #fff;
+		text-decoration: underline;
+
+		&:hover{
+		 color: $red;
+		}
+	}
+	
+}

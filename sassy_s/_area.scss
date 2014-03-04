@@ -1,0 +1,216 @@
+.areaintro{
+	height: em(150);
+	border-bottom: solid $red em(10);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+
+	@include breakpoint(medium) {
+			height: em(240);
+	}
+
+	@include breakpoint(large) {
+			height: em(400);
+			background-attachment: fixed;
+	}
+
+	span{
+		display: inline-block;
+		clear: both;
+		color: #fff;
+		padding: 0;
+		margin-bottom: em(10);
+		font-size: em(6, 15);
+		height: em(76);
+		text-shadow: 2px 3px $black;
+
+		@include breakpoint(medium) {
+			font-size: em(10, 15);
+			height: em(80);
+
+			@include border-radius(5px);
+		}
+
+		@include breakpoint(large) {
+			font-size: em(12, 15);
+			height: em(74);
+		}
+	}
+
+	.shadow{
+		position: relative;
+  		top: 100%;
+  		-webkit-transform: translateY(-100%);
+  		-ms-transform: translateY(-100%);
+  		transform: translateY(-100%);
+		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+	}
+
+	.inner{
+		
+	}
+}
+
+.kreuzberg{
+
+	background-image: url(kreuzberg_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(kreuzberg_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(kreuzberg.jpg);
+	}
+
+}
+
+.friedrichshain{
+
+	background-image: url(friedrichshain_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(friedrichshain_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(friedrichshain.jpg);
+	}
+
+}
+
+.prenzlauerberg{
+
+	background-image: url(prenzlauerberg_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(prenzlauerberg_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(prenzlauerberg.jpg);
+	}
+
+}
+
+.spandau{
+
+	background-image: url(spandau_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(spandau_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(spandau.jpg);
+	}
+
+}
+
+.alttegel{
+
+	background-image: url(alttegel_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(alttegel_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(alttegel.jpg);
+	}
+
+}
+
+.areainfo{
+	padding: em(20) 0;
+	background:#fdfdfd url(pattern.png) repeat top left;
+	color: $black;
+	border-bottom: solid $black em(5);
+	padding-bottom: em(80);
+
+	.blurb{
+		padding-bottom: em(20);
+
+		&:last-of-type{
+			padding-bottom: em(0);
+		}
+	}
+
+	.travel{
+		width: 100%;
+		color: $gray;
+		font-family: $header-font;
+		font-weight: 400;
+		font-size: em(13);
+
+		@include breakpoint(large) {
+			width: 33.333333%;
+		}
+	}
+	
+	@include breakpoint(medium) {
+		padding-bottom: em(100);
+	}
+	
+	@include breakpoint(large) {
+		padding: em(20) 0 em(70);
+
+		.blurb{
+			padding-bottom: em(0);
+			padding-right: em(70);
+		}
+
+	}
+}
+
+.map{
+	margin: em(20) 0 em(20);
+	background: #000;
+
+	iframe{
+		border: em(2) solid $black;
+	}
+
+	@include breakpoint(large) {
+		margin: em(50) 0 em(20);
+		margin-left: 12.5%;
+	}
+}
+
+.building::before,
+.building::after {
+	top: -70px;
+	left: 0;
+	z-index: 10;
+	width: 50%;
+	height: 70px;
+	background: inherit;
+}
+
+.building::before {
+	border-radius: 0 80px 0 0;
+}
+
+.building::after {
+	left: 50%;
+	border-radius: 80px 0 0 0;
+}
+
+.building{
+	background: url(ricepaper2pale.png) repeat top left;
+	padding: em(20) 0;
+	color: $black;
+
+	
+	@include breakpoint(large) {
+		padding-top: em(60);
+		padding-bottom: em(120);
+		.col-2-3{
+		    	margin-left:16.6666665%;
+		    }
+	}
+}
+
+.building2{
+	background: url(ricepaper2.png) repeat;
+}

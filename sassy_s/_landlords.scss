@@ -1,0 +1,20 @@
+.landlords{
+	color: #fff;
+	background: $red url(pattern.png) repeat top left;
+	border-bottom: em(2) solid #fff;
+	text-shadow: 1px 1px $black;
+	padding: em(50) 0;
+
+	a{
+		color: $black;
+	}
+
+	@include breakpoint(large) {
+		padding: em(60);
+
+		.col-2-3{
+	    	margin-left:16.6666665%;
+	    }
+	}
+}
+
