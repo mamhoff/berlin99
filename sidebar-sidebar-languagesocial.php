@@ -5,8 +5,15 @@
  * @package underscores
  */
 ?>
-	<div id="secondary" class="widget-area" role="complementary">
-		<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
+
+<div class="icons">
+	<ul>
+	     <a href="<?php underscore_get_currenturl ();?>"><li class="gb" ></li></a>
+	     <a href="/"><li class="de" ></li></a>
+	     <a href="/"><li class="fb" ></li></a>
+	     <a href="/"><li class="tw" ></li></a>
+	</ul>
+</div>
 
 <!-- #secondary 
 
@@ -28,6 +35,3 @@
 			</aside>
 
 -->
-
-		<?php endif; // end sidebar widget area ?>
-	</div><!-- #secondary -->
