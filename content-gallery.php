@@ -18,51 +18,31 @@
 			<?php if( $attachments->exist() ) : ?>
   
 			  <div id="gallery-1" class="gallery-1 royalSlider rsDefault">
-			    <?php while( $attachments->get() ) : ?>
-			      <a class="rsImg">
-			      	Width: <?php echo wp_get_attachment_image_src($attachments->id())[1]; ?><br/>
-			      	Height: <?php echo wp_get_attachment_image_src($attachments->id())[2]; ?><br/>
-			        ID: <?php echo $attachments->id(); ?><br />
-			        Type: <?php echo $attachments->type(); ?><br />
-			        Subtype: <?php echo $attachments->subtype(); ?><br />
-			        URL: <?php echo $attachments->url(); ?><br />
-			        Image: <?php echo $attachments->image( 'thumbnail' ); ?><br />
-			        Source: <?php echo $attachments->src( 'full' ); ?><br />
-			        Size: <?php echo $attachments->filesize(); ?><br />
-			        Title Field: <?php echo $attachments->field( 'title' ); ?><br />
-			        Caption Field: <?php echo $attachments->field( 'caption' ); ?>
-			      </a>
+			    <?php while( $attachments->get() ) : 
+                  $dimensions = wp_get_attachment_image_src($attachments->id(), 'gallery-full');
+                  $img_width = $dimensions[1];
+                  $img_height = $dimensions[2];
+                  $thumb_dimensions = wp_get_attachment_image_src($attachments->id(), 'gallery-thumb');
+                  $thumb_img_width = $thumb_dimensions[1];
+                  $thumb_img_height = $thumb_dimensions[2];
+                  $img_full_url = $attachments->src( 'gallery-full' );
+                  $img_thumb_url = $attachments->src( 'gallery-thumb' );
+
+            ?>
+			      <a class="rsImg" data-rsw="<?php echo $img_width; ?>" data-rsh="<?php echo $img_height; ?>"
+               data-rsbigimg="<?php echo $img_full_url; ?>" href="<?php echo $img_full_url; ?>" >
+               <img width="<?php echo $thumb_img_width ; ?>" height="<?php echo $thumb_img_height ; ?>" 
+               class="rsTmb" src="<?php echo $img_thumb_url ; ?>" />
+             </a>
+
+			    
 			    <?php endwhile; ?>
 			  </div>
+
 <?php endif; ?>
+      </div>
 
 
-	  		<div id="gallery-1" class="gallery-1 royalSlider rsDefault">
-    			
-    			<a class="rsImg" data-rsw="640" data-rsh="360" data-rsbigimg="assets/images/apartments/kreuzberg/forster/1.jpg" href="assets/images/apartments/kreuzberg/forster/1.jpg"><img width="96" height="72" class="rsTmb" src="assets/images/apartments/kreuzberg/forster/1.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="640" data-rsh="360" data-rsbigimg="assets/images/apartments/kreuzberg/forster/1.jpg" href="assets/images/apartments/kreuzberg/forster/2.jpg"><img width="96" height="72" class="rsTmb" src="assets/images/apartments/kreuzberg/forster/2.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="336" data-rsh="500" data-rsbigimg="../img/paintings/3.jpg" href="../img/paintings/700x500/3.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/3.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="417" data-rsh="500" data-rsbigimg="../img/paintings/4.jpg" href="../img/paintings/700x500/4.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/4.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="601" data-rsh="500" data-rsbigimg="../img/paintings/5.jpg" href="../img/paintings/700x500/5.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/5.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="350" data-rsh="500" data-rsbigimg="../img/paintings/6.jpg" href="../img/paintings/700x500/6.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/6.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="596" data-rsh="500" data-rsbigimg="../img/paintings/7.jpg" href="../img/paintings/700x500/7.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/7.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="700" data-rsh="414" data-rsbigimg="../img/paintings/8.jpg" href="../img/paintings/700x500/8.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/8.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="470" data-rsh="500" data-rsbigimg="../img/paintings/9.jpg" href="../img/paintings/700x500/9.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/9.jpg"></a>
-    
-    			<a class="rsImg" data-rsw="500" data-rsh="500" data-rsbigimg="../img/paintings/10.jpg" href="../img/paintings/700x500/10.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/10.jpg"></a>
-     
-     			<a class="rsImg" data-rsw="700" data-rsh="475" data-rsbigimg="../img/paintings/11.jpg" href="../img/paintings/700x500/11.jpg"><img width="96" height="72" class="rsTmb" src="../img/paintings/t/11.jpg"></a>
-          
-  			</div>
-	  	</div>
 	</div>	
   </section>
 

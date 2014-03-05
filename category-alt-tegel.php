@@ -12,7 +12,6 @@
 
 get_header(); ?>
 
-
 <section class="areaintro alttegel">
 	<?php get_sidebar('sidebar-languagesocial'); ?>
     <div class="shadow">

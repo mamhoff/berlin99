@@ -38,7 +38,16 @@ function underscores_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	if ( function_exists( 'add_theme_support' ) ) {
+			add_theme_support( 'post-thumbnails' );
+	    set_post_thumbnail_size( 150, 150 ); // default Post Thumbnail dimensions   
+	}
+
+	if ( function_exists( 'add_image_size' ) ) { 
+		add_image_size( 'gallery-full', 500, 700 ); //300 pixels wide (and unlimited height)
+		add_image_size( 'gallery-thumb', 92, 76, false ); //(cropped)
+	}
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -108,7 +117,7 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'underscores-complied-js', get_template_directory_uri() . '/js/44d6fb1ebae1dd3f4e8515537655eabc.js', array(), '20120206', true );
+	wp_enqueue_script( 'underscores-complied-js', get_template_directory_uri() . '/js/44d6fb1ebae1dd3f4e8515537655eabc.js', array(), '20120206', true ); 
 
 	wp_enqueue_script( 'underscores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
