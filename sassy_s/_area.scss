@@ -49,14 +49,14 @@
 
 .kreuzberg{
 
-	background-image: url(kreuzberg_small.jpg);
+	background-image: url(images/areas/kreuzberg_small.jpg);
 
 	@include breakpoint(medium) {
-			background-image: url(kreuzberg_medium.jpg);
+			background-image: url(images/areas/kreuzberg_medium.jpg);
 	}
 
 	@include breakpoint(large) {
-			background-image: url(kreuzberg.jpg);
+			background-image: url(images/areas/kreuzberg.jpg);
 	}
 
 }
@@ -103,7 +103,7 @@
 
 }
 
-.alttegel{
+.alt-tegel{
 
 	background-image: url(images/areas/alttegel_small.jpg);
 

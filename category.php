@@ -10,16 +10,21 @@
  * @package underscores
  */
 
-get_header(); ?>
+get_header(); 
+if (is_category( )) {
+  $cat = get_query_var('cat');
+  $yourcat = get_category ($cat);
+  $slug = $yourcat->slug;
+ }?>
 
-<section class="areaintro alttegel">
+<section class="areaintro <?php echo $slug ?>">
 
 	<?php get_sidebar('sidebar-languagesocial'); ?>
 
 
     <div class="shadow">
     <div class="inner">
-    	<span><h1>ALT TEGEL</h1></span>
+    	<span><h1><?php echo single_cat_title(); ?></h1></span>
     </div>
     </div>
  </section>

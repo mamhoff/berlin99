@@ -1997,13 +1997,13 @@ section::after {
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8))); }
 
 .kreuzberg {
-  background-image: url(kreuzberg_small.jpg); }
+  background-image: url(images/areas/kreuzberg_small.jpg); }
   @media (min-width: 30em) {
     .kreuzberg {
-      background-image: url(kreuzberg_medium.jpg); } }
+      background-image: url(images/areas/kreuzberg_medium.jpg); } }
   @media (min-width: 64em) {
     .kreuzberg {
-      background-image: url(kreuzberg.jpg); } }
+      background-image: url(images/areas/kreuzberg.jpg); } }
 
 .friedrichshain {
   background-image: url(friedrichshain_small.jpg); }
@@ -2032,13 +2032,13 @@ section::after {
     .spandau {
       background-image: url(spandau.jpg); } }
 
-.alttegel {
+.alt-tegel {
   background-image: url(images/areas/alttegel_small.jpg); }
   @media (min-width: 30em) {
-    .alttegel {
+    .alt-tegel {
       background-image: url(images/areas/alttegel_medium.jpg); } }
   @media (min-width: 64em) {
-    .alttegel {
+    .alt-tegel {
       background-image: url(images/areas/alttegel.jpg); } }
 
 .areainfo {
