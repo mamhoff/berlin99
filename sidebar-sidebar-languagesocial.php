@@ -6,6 +6,8 @@
  */
 ?>
 
+<div class="inner">
+
 <div class="icons">
 	<ul>
 		 <a href="/"><li class="en" ></li></a>
@@ -13,6 +15,8 @@
 	     <a href="/"><li class="fb" ></li></a>
 	     <a href="/"><li class="tw" ></li></a>
 	</ul>
+</div>
+
 </div>
 
 <!-- #secondary 

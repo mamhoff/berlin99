@@ -10,13 +10,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'underscores' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'underscores' ), 'underscores', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<footer>
+            <div class="inner">
+            berlin99 GmbH 2014 © | website by <a href="http://www.demetriades.co.uk">ALEX</a>
+            </div>
+	</footer> 
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

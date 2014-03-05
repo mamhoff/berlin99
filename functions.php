@@ -99,6 +99,24 @@ function underscores_widgets_init() {
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
+
+	register_sidebar( array(
+		'name'          => 'Landlords',
+		'id'            => 'sidebar-landlords',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
+
+	register_sidebar( array(
+		'name'          => 'Contact',
+		'id'            => 'sidebar-contact',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '',
+		'after_title'   => '',
+	) );
 }
 add_action( 'widgets_init', 'underscores_widgets_init' );
 

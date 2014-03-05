@@ -14,12 +14,8 @@ get_header(); ?>
 
 
 <section class="intro">
-	
-	<div class="inner">
 
 		<?php get_sidebar('sidebar-languagesocial'); ?>
-		
-	</div>
 
 </section>
 
@@ -43,6 +39,28 @@ get_header(); ?>
 		<?php get_sidebar('sidebar-apartments'); ?>
 
 	</div>
+</section>
+
+
+<section class="landlords" id="section3">
+  	<div class="inner">
+
+
+  		<?php get_sidebar('sidebar-landlords'); ?>
+
+
+  	</div>
+</section>
+
+
+<section class="contact" id="section4">
+    <div class="inner">
+
+
+  		<?php get_sidebar('sidebar-contact'); ?>
+
+
+  	</div>
 </section>
 
 
