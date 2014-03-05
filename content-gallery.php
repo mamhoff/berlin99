@@ -4,7 +4,7 @@
  */
 ?>
 
-<section class="building">
+
   	<div class="inner">
   		<div class="col-2-3 apartmentheader">
   			<h2><?php the_title(); ?></h2>
@@ -44,5 +44,4 @@
 
 
 	</div>	
-  </section>
 
