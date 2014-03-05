@@ -13,7 +13,10 @@
 get_header(); ?>
 
 <section class="areaintro alttegel">
+
 	<?php get_sidebar('sidebar-languagesocial'); ?>
+
+
     <div class="shadow">
     <div class="inner">
     	<span><h1>ALT TEGEL</h1></span>
