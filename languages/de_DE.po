@@ -1,0 +1,325 @@
+# Copyright (C) 2013 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: berlin 99 0.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2013-12-19 02:31:31+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-03-05 15:23+0100\n"
+"Last-Translator: Martin Meyerhoff <mamhoff@googlemail.com>\n"
+"Language-Team: Martin Meyerhoff <mamhoff@gmail.com>\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Ups -- Diese Seite konnte nicht gefunden werden."
+
+#: 404.php:19
+#, fuzzy
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Der gewünschte Inhalt konnte nicht gefunden werden. "
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr "Meistbenutzte Kategorien"
+
+#. translators: %1$s: smiley
+#: 404.php:44
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Versuchen Sie, in den Monatsarchiven zu schauen. %1$s"
+
+#: archive.php:31
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: archive.php:39
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: archive.php:42
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+#: archive.php:42
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:45
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: archive.php:45
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:48
+msgid "Asides"
+msgstr "Asides"
+
+#: archive.php:51
+msgid "Galleries"
+msgstr "Galerien"
+
+#: archive.php:54
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:57
+msgid "Videos"
+msgstr "Videos"
+
+#: archive.php:60
+msgid "Quotes"
+msgstr "Zitate"
+
+#: archive.php:63
+msgid "Links"
+msgstr "Links"
+
+#: archive.php:66
+msgid "Statuses"
+msgstr "Statusmeldungen"
+
+#: archive.php:69
+msgid "Audios"
+msgstr "Tondateien"
+
+#: archive.php:72
+msgid "Chats"
+msgstr "Chats"
+
+#: archive.php:75
+#: sidebar.php:17
+msgid "Archives"
+msgstr "Archive"
+
+#: comments.php:30
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "Some thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Ein Gedanke über &ldquo;%2$s&rdquo;"
+msgstr[1] "Ein paar Gedanken über &ldquo;%2$s&rdquo;"
+
+#: comments.php:37
+#: comments.php:57
+msgid "Comment navigation"
+msgstr "Kommentarnavigation"
+
+#: comments.php:38
+#: comments.php:58
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:39
+#: comments.php:59
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:69
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: content-none.php:19
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bereit für Ihren ersten Post? <a href=\"%1%s\">Legen Sie los</a>."
+
+#: content-none.php:23
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Entschuldigung, aber ihre Suche hat nichts ergeben. Versuchen Sie es noch einmal mit anderen Suchbegriffen"
+
+#: content-none.php:28
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Scheinbar können wir nicht finden, was Sie suchen. Möglicherweise hilft suchen."
+
+#: content-page.php:18
+#: content-single.php:20
+#: content.php:27
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: content-page.php:23
+#: content-single.php:60
+#: content.php:61
+#: inc/template-tags.php:81
+#: inc/template-tags.php:100
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:29
+#: content-single.php:32
+#: content.php:38
+#: content.php:48
+msgid ", "
+msgstr ", "
+
+#: content-single.php:37
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dieser Eintrag hat folgende Tags: %2$s. Setzen Sie ein <a href=\"%3$s\" rel=\"bookmark\">Lesezeichen</a>."
+
+#: content-single.php:39
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Setzen Sie ein <a href=\"%3$s\" rel=\"bookmark\">Lesezeichen</a>."
+
+#: content-single.php:45
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dieser Eintrag hat die Kategorie %1$s und die Tags %2$s. Setzen Sie ein <a href=\"%3$s\" rel=\"bookmark\">Lesezeichen</a>."
+
+#: content-single.php:47
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr "Dieser Eintrag hat die Kategorie %1$s. Setzen Sie ein <a href=\"%3$s\" rel=\"bookmark\">Lesezeichen</a>."
+
+#: content.php:24
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Lesen Sie weiter <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:42
+msgid "Posted in %1$s"
+msgstr "Gespeichert unter %1$s"
+
+#: content.php:52
+msgid "Tagged %1$s"
+msgstr "Tags: %1$s"
+
+#: content.php:58
+msgid "Leave a comment"
+msgstr "Hinterlassen Sie einen Kommentar"
+
+#: content.php:58
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: content.php:58
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: footer.php:16
+msgid "Proudly powered by %s"
+msgstr "Stolz präsentiert von %s"
+
+#: footer.php:18
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: functions.php:45
+msgid "Primary Menu"
+msgstr "Primäres Menü"
+
+#: functions.php:65
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: header.php:31
+msgid "Menu"
+msgstr "Menü"
+
+#: header.php:32
+msgid "Skip to content"
+msgstr "Weiter zum Inhalt"
+
+#: inc/extras.php:63
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Post-Navigation"
+
+#: inc/template-tags.php:27
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Posts"
+
+#: inc/template-tags.php:31
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Posts<span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Post-Navigation"
+
+#: inc/template-tags.php:59
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&larr;</span> %title"
+
+#: inc/template-tags.php:60
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:81
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: inc/template-tags.php:91
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">schreibt:</span>"
+
+#: inc/template-tags.php:97
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s, um %2$s"
+
+#: inc/template-tags.php:104
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar wird moderiert und befindet sich in der Warteschlange"
+
+#: inc/template-tags.php:145
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Geposted am %1$s</span><span class=\"byline\"> von %2$s</span>"
+
+#: search.php:16
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für %s"
+
+#: searchform.php:10
+msgctxt "label"
+msgid "Search for:"
+msgstr "Suchen nach:"
+
+#: searchform.php:11
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Suche &hellip"
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suche"
+
+#: sidebar.php:24
+msgid "Meta"
+msgstr "Meta"
+
+#. Theme Name of the plugin/theme
+msgid "_s"
+msgstr "_s"
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+#. Description of the plugin/theme
+msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+msgstr "Hi, Ich bin das Starter-Theme <code>_s</code>, oder <em>underscores</em>, wenn's Ihnen besser gefällt. Hack mich."
+
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "Automattic"
+
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr "http://automattic.com/"
+
