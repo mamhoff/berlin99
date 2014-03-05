@@ -45,6 +45,7 @@ get_header(); ?>
 			?>
 
 	  	</div>
+
       <div class="col-3-4 map">
         <div class="Flexible-container"><iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.kMRyQp7LmtAs" width="640" height="480"></iframe></div>
       </div>
@@ -52,8 +53,23 @@ get_header(); ?>
   </section>
 
 
+  <?php while ( have_posts() ) : the_post(); ?>
+
+				<?php
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
+				?>
+
+			<?php endwhile; ?>
+
+
+
+
 <section class="thumbs" id="section2">
-  	<div class="inner">
+  <div class="inner">
 
 		<?php get_sidebar('sidebar-apartments'); ?>
 

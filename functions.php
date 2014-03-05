@@ -46,7 +46,7 @@ function underscores_setup() {
 	) );
 
 	// Enable support for Post Formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'gallery' , 'audio' ) );
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'underscores_custom_background_args', array(
@@ -104,11 +104,11 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
- */
+ */ 
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( 'underscores-complied-js', get_template_directory_uri() . '/js/44d6fb1ebae1dd3f4e8515537655eabc.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'underscores-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
@@ -143,6 +143,10 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
-function underscore_get_currenturl() {
-return "Hello"; /* ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; */
-}
+if( !function_exists('get_the_content_with_format') ):
+		function get_the_content_with_format ($more_link_text = '', $stripteaser = 0, $more_file = '') {
+		$content = get_the_content($more_link_text, $stripteaser, $more_file);
+		$content = preg_replace('/\[gallery[^\]]*?\]/', '', $content); 
+		return $content;
+	}
+endif;
