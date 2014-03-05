@@ -15,6 +15,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<script src="<?php echo get_template_directory_uri() . '/js/modernizr.custom.js'; ?>"></script>
+
 <?php wp_head(); ?>
 
 <meta charset="utf-8">
@@ -22,15 +24,15 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel='stylesheet' href='779bbfbb201cc6917c8e5b2b7429232b.css'>
 
-  <script src='44d6fb1ebae1dd3f4e8515537655eabc.js'></script>
+    
+  <link href="favicon.ico" rel="shortcut icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
   
-  <link href="<!-- @path favicon.ico -->" rel="shortcut icon">
-  <link href="<!-- @path apple-touch-icon.png -->" rel="apple-touch-icon">
 
   <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
+    
 
 
 
