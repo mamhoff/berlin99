@@ -63,42 +63,56 @@
 
 .friedrichshain{
 
-	background-image: url(friedrichshain_small.jpg);
+	background-image: url(images/areas/friedrichshain_small.jpg);
 
 	@include breakpoint(medium) {
-			background-image: url(friedrichshain_medium.jpg);
+			background-image: url(images/areas/friedrichshain_medium.jpg);
 	}
 
 	@include breakpoint(large) {
-			background-image: url(friedrichshain.jpg);
+			background-image: url(images/areas/friedrichshain.jpg);
 	}
 
 }
 
-.prenzlauerberg{
+.prenzlauer-berg{
 
-	background-image: url(prenzlauerberg_small.jpg);
+	background-image: url(images/areas/prenzlauerberg_small.jpg);
 
 	@include breakpoint(medium) {
-			background-image: url(prenzlauerberg_medium.jpg);
+			background-image: url(images/areas/prenzlauerberg_medium.jpg);
 	}
 
 	@include breakpoint(large) {
-			background-image: url(prenzlauerberg.jpg);
+			background-image: url(images/areas/prenzlauerberg.jpg);
+	}
+
+}
+
+.neukoelln{
+
+	background-image: url(images/areas/prenzlauerberg_small.jpg);
+
+	@include breakpoint(medium) {
+			background-image: url(images/areas/prenzlauerberg_medium.jpg);
+	}
+
+	@include breakpoint(large) {
+			background-image: url(images/areas/prenzlauerberg.jpg);
 	}
 
 }
 
 .spandau{
 
-	background-image: url(spandau_small.jpg);
+	background-image: url(images/areas/spandau_small.jpg);
 
 	@include breakpoint(medium) {
-			background-image: url(spandau_medium.jpg);
+			background-image: url(images/areas/spandau_medium.jpg);
 	}
 
 	@include breakpoint(large) {
-			background-image: url(spandau.jpg);
+			background-image: url(images/areas/spandau.jpg);
 	}
 
 }
@@ -193,7 +207,7 @@
 }
 
 .building{
-	background: url(ricepaper2pale.png) repeat top left;
+	background: url(images/ricepaper2pale.png) repeat top left;
 	padding: em(20) 0;
 	color: $black;
 
@@ -208,5 +222,5 @@
 }
 
 .building2{
-	background: url(ricepaper2.png) repeat;
+	background: url(images/ricepaper2.png) repeat;
 }

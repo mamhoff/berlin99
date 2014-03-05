@@ -107,4 +107,15 @@ if (is_category( )) {
 </section>
 
 
+<section class="contact" id="section4">
+    <div class="inner">
+
+
+  		<?php get_sidebar('sidebar-contact'); ?>
+
+
+  	</div>
+</section>
+
+
 <?php get_footer(); ?>

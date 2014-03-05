@@ -2006,31 +2006,40 @@ section::after {
       background-image: url(images/areas/kreuzberg.jpg); } }
 
 .friedrichshain {
-  background-image: url(friedrichshain_small.jpg); }
+  background-image: url(images/areas/friedrichshain_small.jpg); }
   @media (min-width: 30em) {
     .friedrichshain {
-      background-image: url(friedrichshain_medium.jpg); } }
+      background-image: url(images/areas/friedrichshain_medium.jpg); } }
   @media (min-width: 64em) {
     .friedrichshain {
-      background-image: url(friedrichshain.jpg); } }
+      background-image: url(images/areas/friedrichshain.jpg); } }
 
-.prenzlauerberg {
-  background-image: url(prenzlauerberg_small.jpg); }
+.prenzlauer-berg {
+  background-image: url(images/areas/prenzlauerberg_small.jpg); }
   @media (min-width: 30em) {
-    .prenzlauerberg {
-      background-image: url(prenzlauerberg_medium.jpg); } }
+    .prenzlauer-berg {
+      background-image: url(images/areas/prenzlauerberg_medium.jpg); } }
   @media (min-width: 64em) {
-    .prenzlauerberg {
-      background-image: url(prenzlauerberg.jpg); } }
+    .prenzlauer-berg {
+      background-image: url(images/areas/prenzlauerberg.jpg); } }
+
+.neukoelln {
+  background-image: url(images/areas/prenzlauerberg_small.jpg); }
+  @media (min-width: 30em) {
+    .neukoelln {
+      background-image: url(images/areas/prenzlauerberg_medium.jpg); } }
+  @media (min-width: 64em) {
+    .neukoelln {
+      background-image: url(images/areas/prenzlauerberg.jpg); } }
 
 .spandau {
-  background-image: url(spandau_small.jpg); }
+  background-image: url(images/areas/spandau_small.jpg); }
   @media (min-width: 30em) {
     .spandau {
-      background-image: url(spandau_medium.jpg); } }
+      background-image: url(images/areas/spandau_medium.jpg); } }
   @media (min-width: 64em) {
     .spandau {
-      background-image: url(spandau.jpg); } }
+      background-image: url(images/areas/spandau.jpg); } }
 
 .alt-tegel {
   background-image: url(images/areas/alttegel_small.jpg); }
@@ -2097,7 +2106,7 @@ section::after {
   border-radius: 80px 0 0 0; }
 
 .building {
-  background: url(ricepaper2pale.png) repeat top left;
+  background: url(images/ricepaper2pale.png) repeat top left;
   padding: 1.25em 0;
   color: #18180d; }
   @media (min-width: 64em) {
@@ -2108,7 +2117,7 @@ section::after {
         margin-left: 16.6666665%; } }
 
 .building2 {
-  background: url(ricepaper2.png) repeat; }
+  background: url(images/ricepaper2.png) repeat; }
 
 .landlords {
   color: #fff;
