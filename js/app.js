@@ -1,22 +1,19 @@
-
-
-            // Prevent console.log from generating errors in IE for the purposes of the demo
-            if ( ! window.console ) console = { log: function(){} };
-
-            // The actual plugin
-            $('.single-page-nav').singlePageNav({
-                offset: $('.single-page-nav').outerHeight(),
-                filter: ':not(.external)',
-                updateHash: true,
-                beforeStart: function() {
-                    console.log('begin scrolling');
-                },
-                onComplete: function() {
-                    console.log('done scrolling');
-                }
-            });
-        
-var navigation = responsiveNav(".nav-collapse", {
+jQuery(document).ready(function(jQuery) {
+   jQuery(function() {
+    jQuery('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = jQuery(this.hash);
+        target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          jQuery('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  var navigation = responsiveNav(".nav-collapse", {
         animate: true,        // Boolean: Use CSS3 transitions, true or false
         transition: 250,      // Integer: Speed of the transition, in milliseconds
         label: "Menu",        // String: Label for the navigation toggle
@@ -29,8 +26,7 @@ var navigation = responsiveNav(".nav-collapse", {
         close: function(){}   // Function: Close callback
       });
 
-jQuery(document).ready(function($) {
-  $('.gallery-1').royalSlider({
+  jQuery('.gallery-1').royalSlider({
     fullscreen: {
       enabled: true,
       nativeFS: true

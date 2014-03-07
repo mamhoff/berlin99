@@ -142,11 +142,9 @@ function underscores_scripts() {
 
     wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/toucheffects.js', array(), '20140302', true);
 
-    wp_enqueue_script( 'singlePageNav', get_template_directory_uri() . '/js/query.singlePageNav.min.js', array(), '20140302', true);
-
     wp_enqueue_script( 'touchy', get_template_directory_uri() . '/js/jquery.royalslider.min.js', array(), '20140302', true);
 
-    wp_enqueue_script( 'application_js', get_template_directory_uri() . '/js/app.js', array(), '20140302', true);
+    wp_enqueue_script( 'application_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '20140302', true);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
