@@ -14,8 +14,12 @@
 	  	</div>
 	  	<div class="col-2-3 apartmentinfo pics">
 
-	  		<?php $attachments = new Attachments( 'attachments' ); /* pass the instance name */ ?>
-			<?php if( $attachments->exist() ) : ?>
+	  		<?php 
+        $o_ID = icl_object_id($post->ID, 'post', false, 'en'); 
+        $args = array('post_type' => 'attachment','numberposts' => 3,'post_status' => null,'post_parent' => $o_ID);
+        $attachments = get_posts($args);
+
+			  if( $attachments->exist() ) : ?>
   
 			  <div id="gallery-1" class="gallery-1 royalSlider rsDefault">
 			    <?php while( $attachments->get() ) : 
