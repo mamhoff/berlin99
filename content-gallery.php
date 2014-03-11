@@ -16,21 +16,21 @@
 
 	  		<?php 
         $o_ID = icl_object_id($post->ID, 'post', false, 'en'); 
-        $args = array('post_type' => 'attachment','numberposts' => 3,'post_status' => null,'post_parent' => $o_ID);
+        $args = array('post_type' => 'attachment','numberposts' => -1,'post_status' => null,'post_parent' => $o_ID);
         $attachments = get_posts($args);
 
-			  if( $attachments->exist() ) : ?>
+			  if( $attachments ) : ?>
   
 			  <div id="gallery-1" class="gallery-1 royalSlider rsDefault">
-			    <?php while( $attachments->get() ) : 
-                  $dimensions = wp_get_attachment_image_src($attachments->id(), 'gallery-full');
+			    <?php foreach( $attachments as $attachment ) { 
+                  $dimensions = wp_get_attachment_image_src($attachment->ID, 'gallery-full');
                   $img_width = $dimensions[1];
                   $img_height = $dimensions[2];
-                  $thumb_dimensions = wp_get_attachment_image_src($attachments->id(), 'gallery-thumb');
+                  $thumb_dimensions = wp_get_attachment_image_src($attachment->ID, 'gallery-thumb');
                   $thumb_img_width = $thumb_dimensions[1];
                   $thumb_img_height = $thumb_dimensions[2];
-                  $img_full_url = $attachments->src( 'gallery-full' );
-                  $img_thumb_url = $attachments->src( 'gallery-thumb' );
+                  $img_full_url = $dimensions[0];
+                  $img_thumb_url = $thumb_dimensions[0];
 
             ?>
 			      <a class="rsImg" data-rsw="<?php echo $img_width; ?>" data-rsh="<?php echo $img_height; ?>"
@@ -40,7 +40,7 @@
              </a>
 
 			    
-			    <?php endwhile; ?>
+			    <?php } ?>
 			  </div>
 
 <?php endif; ?>
