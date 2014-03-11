@@ -8,7 +8,7 @@
 
   		<h2>LANDLORDS</h2>
   		<div class="col-2-3">
-        <div class="col-1-4"> <img style="margin: 18px 0 18px 0" src="<!-- @path lanlords.png -->" alt=""></div>
+        <div class="col-1-4"><img src="<?php bloginfo('template_directory'); ?>/images/lanlords.png" alt=""></div>
           <div class="col-3-4">
 
 

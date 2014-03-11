@@ -22,7 +22,7 @@
 			  if( $attachments ) : ?>
   
 			  <div id="gallery-1" class="gallery-1 royalSlider rsDefault">
-			    <?php foreach( $attachments as $attachment ) { 
+			    <?php foreach( array_reverse($attachments) as $attachment ) { 
                   $dimensions = wp_get_attachment_image_src($attachment->ID, 'gallery-full');
                   $img_width = $dimensions[1];
                   $img_height = $dimensions[2];

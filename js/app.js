@@ -13,7 +13,8 @@ jQuery(document).ready(function(jQuery) {
     }
   });
 
-   jQuery(function() {
+
+  jQuery(function() {
     jQuery('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = jQuery(this.hash);
