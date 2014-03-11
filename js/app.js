@@ -1,4 +1,18 @@
 jQuery(document).ready(function(jQuery) {
+  // This replaces links to JUST their anchors if on the same page 
+  jQuery('a[href*=#]').each(function(){
+    link = jQuery(this).attr('href');
+    re = /^(.+)\/?(#.+)$/;
+    if(link.match(re)) {
+      url = link.replace(re, '$1') + "/";
+      anchor = link.replace(re, '$2');
+      current_page_url = window.location.href.replace(re, '$1');
+      if (url == current_page_url) {
+        jQuery(this).attr('href', anchor);
+      }
+    }
+  });
+
    jQuery(function() {
     jQuery('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
