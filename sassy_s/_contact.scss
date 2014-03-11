@@ -1,9 +1,8 @@
-.contact{
+.contact{ 
 	color: #fff;
-	background:$black url(images/pattern.png) repeat top left;
+	background:$black url(pattern.png) repeat top left;
 
 	border-top: solid $black em(5);
-	border-bottom: solid #fff em(2);
 	padding: em(50) 0;
 	text-align: center;
 
@@ -20,9 +19,16 @@
 		font-size: em(20);
 	}
 
-	a{
-		color:  #fff;
-	}
+	a{ 
+		color: white;
+	
+		@include transition-property (color);
+		@include transition-duration(0.3s);
+		@include transition-timing-function(ease-out);
+	
+		&:hover{ 
+			color: $red;}
+		}
 
 	h2{
 		padding-bottom: em(10);

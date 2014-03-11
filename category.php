@@ -55,17 +55,17 @@ if (is_category( )) {
 
       <div class="col-3-4 map">
         <div class="Flexible-container">
-          <?php if ($slug == 'alt-tegel'): ?>
+          <?php if (preg_match( '/alt-tegel.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.kMRyQp7LmtAs" width="640" height="480">
-          <?php elseif ($slug == 'kreuzberg'): ?>
+          <?php elseif (preg_match( '/kreuzberg.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.ksXps2n99q90" width="640" height="480">
-          <?php elseif ($slug == 'neukoelln'): ?>
+          <?php elseif (preg_match( '/neukoelln.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.kJ8N_ofuSm30" width="640" height="480">
-          <?php elseif ($slug == 'prenzlauer-berg'): ?>
+          <?php elseif (preg_match( '/prenzlauer-berg.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.kNjYsAVnYelc" width="640" height="480">
-          <?php elseif ($slug == 'friedrichshain'): ?>
+          <?php elseif (preg_match( '/friedrichshain.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.kwxI5TkYL4Rs" width="640" height="480">
-          <?php elseif ($slug == 'spandau'): ?>
+          <?php elseif (preg_match( '/spandau.*/', $slug)): ?>
             <iframe src="https://mapsengine.google.com/map/embed?mid=zDkgAOU-k_Zw.ktAfO2Kv6VzQ" width="640" height="480">
           <?php endif ?>
         </iframe>

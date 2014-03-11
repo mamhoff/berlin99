@@ -6,9 +6,9 @@
  */
 ?>
 
-<h2>LANDLORDS</h2>
-<div class="col-2-3">
-        <div class="col-1-4"></div>
+  		<h2>LANDLORDS</h2>
+  		<div class="col-2-3">
+        <div class="col-1-4"> <img style="margin: 18px 0 18px 0" src="<!-- @path lanlords.png -->" alt=""></div>
           <div class="col-3-4">
 
 
@@ -29,6 +29,9 @@
 
 <?php endif; ?>
 
-<br><br> <a href="#" class="landlordscontact">Landlords Contact</a></p>
-          </div>
- </div>
+</div>
+         
+  		</div>
+      <div class="col-2-3">
+        <a class="btn" href="#" class="landlordscontact">LANDLORDS CONTACT</a></p>
+</div>

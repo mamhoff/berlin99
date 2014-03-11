@@ -1,13 +1,41 @@
 .landlords{
 	color: #fff;
-	background: $red url(images/pattern.png) repeat top left;
+	background: $red url(pattern.png) repeat top left;
 	border-bottom: em(2) solid #fff;
-	text-shadow: 1px 1px $black;
 	padding: em(50) 0;
 
-	a{
-		color: $black;
-	}
+	.btn{
+			text-align: center;
+			display: block;
+			-webkit-border-radius: 10;
+			-moz-border-radius: 10;
+			border-radius: em(10);
+			width: em(230);
+			font-family: Arial;
+			color: #fff;
+			background: $black;
+			font-size: em(13);
+			font-weight: 900;
+			padding: em(15);
+			margin: em(25) auto 0;
+			text-decoration: none;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 400;
+			letter-spacing: 1px;
+
+			@include transition-property (all);
+			@include transition-duration(0.5s);
+			@include transition-timing-function(ease-out);
+
+			&:hover {
+				color: $black;
+			background: #fff;
+
+			}
+
+		}
+
+
 
 	@include breakpoint(large) {
 		padding: em(60);
@@ -17,4 +45,6 @@
 	    }
 	}
 }
+
+
 
