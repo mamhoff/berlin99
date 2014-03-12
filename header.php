@@ -42,7 +42,7 @@
 
 			</nav><!-- #site-navigation -->
 		
-			<a class='current' href="<?php home_url(); ?>"><img  class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="berlin99 Logo"></a>
+			<a class='current' href="<?php echo get_home_url(); ?>"><img  class="logo" src="<?php bloginfo('template_directory'); ?>/images/logo.svg" alt="berlin99 Logo"></a>
 
 			
 		</div>
