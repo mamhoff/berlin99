@@ -113,7 +113,7 @@ function underscores_widgets_init() {
 		'name'          => 'Landlords',
 		'id'            => 'sidebar-landlords',
 		'before_widget' => ' ',
-		'after_widget'  => '<div class="col-2-3">
+		'after_widget'  => '</div> </div> <div class="col-2-3">
         <a class="btn" href="#" class="landlordscontact">LANDLORDS CONTACT</a></p>
       </div>',
 		'before_title'  => '<h2>',
