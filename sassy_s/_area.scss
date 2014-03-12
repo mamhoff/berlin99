@@ -38,12 +38,33 @@
 	}
 
 	.shadow{
-		position: relative;
-  		top: 90%;
-  		-webkit-transform: translateY(-90%);
-  		-ms-transform: translateY(-90%);
-  		transform: translateY(-90%);
-		background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+
+
+			position: relative;
+	  		top: 55%;
+	  		-webkit-transform: translateY(-55%);
+	  		-ms-transform: translateY(-55%);
+	  		transform: translateY(-55%);
+			background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+			background-image: -moz-linear-gradient(center top , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+		
+
+
+		@include breakpoint(medium) {
+	  		top: 72%;
+	  		-webkit-transform: translateY(-72%);
+	  		-ms-transform: translateY(-72%);
+	  		transform: translateY(-72%);
+			
+		}
+
+		@include breakpoint(large) {
+	  		top: 85%;
+	  		-webkit-transform: translateY(-85%);
+	  		-ms-transform: translateY(-85%);
+	  		transform: translateY(-85%);
+			
+		}
 	}
 }
 
@@ -157,6 +178,17 @@ section[class*=alt-tegel]{
 			width: 33.333333%;
 		}
 	}
+
+	.col-3-4{
+		
+		@include breakpoint(medium) {
+			width: 100%;
+		}
+
+		@include breakpoint(large) {
+			width: 75%;
+		}
+	}
 	
 	@include breakpoint(medium) {
 		padding-bottom: em(100);
@@ -179,6 +211,10 @@ section[class*=alt-tegel]{
 
 	iframe{
 		border: em(2) solid $black;
+	}
+
+	@include breakpoint(large) {
+		margin-left: 0;
 	}
 
 	@include breakpoint(large) {

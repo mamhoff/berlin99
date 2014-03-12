@@ -112,10 +112,10 @@ function underscores_widgets_init() {
 	register_sidebar( array(
 		'name'          => 'Landlords',
 		'id'            => 'sidebar-landlords',
-		'before_widget' => '',
+		'before_widget' => ' ',
 		'after_widget'  => '',
-		'before_title'  => '',
-		'after_title'   => '',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2> <div class="col-2-3"> <div class="col-1-4"> <img src="' . get_template_directory_uri() . '/images/lanlords.png" alt=""></div><div class="col-3-4">',
 	) );
 
 	register_sidebar( array(

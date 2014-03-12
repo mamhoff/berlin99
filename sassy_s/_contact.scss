@@ -46,6 +46,17 @@
 		}
 	}
 
+	.col-3-4{
+		
+		@include breakpoint(medium) {
+			width: 100%;
+		}
+
+		@include breakpoint(large) {
+			width: 75%;
+		}
+	}
+
 
 	@include breakpoint(large) {
 		padding: em(60) 0;

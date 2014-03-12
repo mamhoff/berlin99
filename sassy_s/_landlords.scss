@@ -4,6 +4,16 @@
 	border-bottom: em(2) solid #fff;
 	padding: em(50) 0;
 
+	.col-1-4{
+
+	img{	position: relative;
+			margin-left: 50%;
+			left:em(-80);
+			padding-bottom: em(20);
+		}
+
+	}
+
 	.btn{
 			text-align: center;
 			display: block;
@@ -34,6 +44,13 @@
 			}
 
 		}
+
+
+@include breakpoint(medium) {
+		.col-3-4{
+		padding-left: em(13);
+	}
+}
 
 
 

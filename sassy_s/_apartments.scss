@@ -49,12 +49,18 @@
 table { 
   width: 85%;
   font-size: em(13);
-  margin: em(30) auto;
+  margin: em(30) auto em(0);
   border-collapse: collapse;
   color: $black;
-  border-radius: 10px;
   border: 1px solid $red;
   overflow: hidden;
+
+  -webkit-border-radius: 10px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 10px;
+
+  border-radius: 10px;
 }
 
 tr{
