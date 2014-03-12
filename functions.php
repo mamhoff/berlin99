@@ -113,7 +113,9 @@ function underscores_widgets_init() {
 		'name'          => 'Landlords',
 		'id'            => 'sidebar-landlords',
 		'before_widget' => ' ',
-		'after_widget'  => '',
+		'after_widget'  => '<div class="col-2-3">
+        <a class="btn" href="#" class="landlordscontact">LANDLORDS CONTACT</a></p>
+      </div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2> <div class="col-2-3"> <div class="col-1-4"> <img src="' . get_template_directory_uri() . '/images/lanlords.png" alt=""></div><div class="col-3-4">',
 	) );
