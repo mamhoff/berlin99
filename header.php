@@ -20,25 +20,10 @@
 <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
     
   <link href="favicon.ico" rel="shortcut icon">
   <link href="apple-touch-icon.png" rel="apple-touch-icon">
-
-  <script src="<?php echo get_template_directory_uri() . '/js/responsive-nav.min.js'; ?>"></script>
-
-<script src="<?php echo get_template_directory_uri() . '/js/modernizr.custom.js'; ?>"></script>
-
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
-    
-
-
-
-
-
 
 </head>
 
