@@ -50,7 +50,10 @@
 
 			<nav class="nav-collapse">
 				
-				<?php wp_nav_menu( array( 'menu' => 'Main menu' ) ); ?>
+				<?php wp_nav_menu( array( 
+          'menu' => 'Main menu',
+          'container' => '',
+        ) ); ?>
 
 			</nav><!-- #site-navigation -->
 		

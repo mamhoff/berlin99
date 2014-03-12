@@ -138,7 +138,7 @@ function underscores_scripts() {
 
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.10.2.min', array(), '20140302', true);
 
-    wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array(), '20140302', true);
+   // wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array(), '20140302', true);
 
     wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/js/toucheffects.js', array(), '20140302', true);
 
