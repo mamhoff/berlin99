@@ -8,7 +8,7 @@
 
       <div class="col-1-2">
 
-        <h2>CONTACT</h2>
+        <h2><?php _e('CONTACT', 'underscores'); ?></h2>
     
             <a href="tel:00493081802125" class="lrg"><i class="fa fa-bullhorn fa-lg"></i>&nbsp;&nbsp;&nbsp;+49 (0) 30 8180 2125<br><br></a>
             <a href="mailto:info@berlin99.com" class="lrg"><i class="fa fa-keyboard-o fa-lg"></i>&nbsp;&nbsp;&nbsp;info@berlin99.com<br><br></a>
@@ -24,7 +24,7 @@
        
       <div class="col-1-2">
 
-        <h2>LATEST</h2>
+        <h2><?php _e('LATEST', 'underscores'); ?></h2>
 
         <div class="twitter">
          <a class="twitter-timeline" href="https://twitter.com/b99Property" data-widget-id="443339026372640768" >Tweets by @b99Property</a>

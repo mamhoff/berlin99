@@ -28,6 +28,6 @@
          
   		</div>
       <div class="col-2-3">
-        <a class="btn" href="#" class="landlordscontact">LANDLORDS CONTACT</a></p>
+        <a class="btn" href="#" class="landlordscontact"><?php _e('LANDLORDS CONTACT', 'underscores') ?></a></p>
 </div>
 <?php endif; ?>

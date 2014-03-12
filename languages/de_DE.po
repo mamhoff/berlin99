@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: berlin 99 0.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-11 17:50+0100\n"
+"POT-Creation-Date: 2014-03-12 18:04+0100\n"
 "PO-Revision-Date: 2014-03-05 15:23+0100\n"
 "Last-Translator: Martin Meyerhoff <mamhoff@googlemail.com>\n"
 "Language-Team: Martin Meyerhoff <mamhoff@gmail.com>\n"
@@ -23,7 +23,7 @@ msgid "Meta"
 msgstr "Meta"
 
 #: ../sidebar-languagesocial.php:18 ../sidebar-sidebar-about.php:19
-#: ../sidebar-sidebar-landlords.php:26
+#: ../sidebar-sidebar-landlords.php:26 ../sidebar-sidebar-landlords.php:22
 msgid "Please activate some Widgets"
 msgstr ""
 
@@ -268,6 +268,22 @@ msgstr "Kommentare sind geschlossen"
 #: ../sidebar-sidebar-apartments.php:50 ../sidebar-sidebar-apartments.php:59
 msgid "Take a look"
 msgstr "Schauen Sie!"
+
+#: ../sidebar-sidebar-contact.php:11
+msgid "CONTACT"
+msgstr "KONTAKT"
+
+#: ../sidebar-sidebar-contact.php:27
+msgid "LATEST"
+msgstr "AKTUELLES"
+
+#: ../sidebar-sidebar-landlords.php:31
+msgid "LANDLORDS CONTACT"
+msgstr "KONTAKT FÜR VERMIETER"
+
+#: ../sidebar-sidebar-apartments.php:8
+msgid "APARTMENTS"
+msgstr "WOHNUNGEN"
 
 #~ msgctxt "monthly archives date format"
 #~ msgid "F Y"

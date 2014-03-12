@@ -5,7 +5,7 @@
  * @package underscores
  */
 ?>
-  		<span><h2>APARTMENTS</h2></span>
+  		<span><h2><?php _e('APARTMENTS', 'underscores'); ?></h2></span>
   		<div class="col-1-3 area">
   			<figure>
 				<img src="<?php bloginfo('template_directory'); ?>/images/areas/thumbnails/kreuzbergthumb.JPG" alt="/">
